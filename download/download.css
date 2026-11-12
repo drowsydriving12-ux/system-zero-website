@@ -1,0 +1,29 @@
+.download-page { min-height: 100vh; min-height: 100svh; }
+.download-shell {
+  width: min(calc(100% - 40px), 620px);
+  min-height: 100vh;
+  min-height: 100svh;
+  margin-inline: auto;
+  padding-block: clamp(32px, 6vh, 64px);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: stretch;
+}
+.download-shell > .brand { text-align: center; white-space: normal; overflow-wrap: anywhere; line-height: 1.4; }
+.download-panel { margin-top: clamp(36px, 7vh, 72px); text-align: center; }
+.download-panel .eyebrow { font-size: 0.65rem; letter-spacing: 0.17em; }
+.download-panel h1 { margin: 20px 0; font-size: clamp(2.25rem, 9vw, 4.5rem); letter-spacing: -0.05em; overflow-wrap: anywhere; }
+.download-copy { margin: 0; color: #b2c5d0; font-size: 1.125rem; }
+.platform-label { margin: 30px 0 12px; color: var(--muted); font-size: 0.8rem; letter-spacing: 0.08em; }
+.store-links { display: grid; gap: 12px; max-width: 420px; margin-inline: auto; }
+.store-link { width: 100%; min-height: 64px; padding: 18px 20px; gap: 16px; justify-content: space-between; text-align: left; line-height: 1.5; letter-spacing: 0.06em; }
+.store-link span { flex-shrink: 0; font-size: 1.2rem; }
+.store-link.is-secondary { background: var(--surface); color: var(--cyan); border-color: var(--line); box-shadow: none; }
+.store-link.is-secondary:hover { background: var(--surface-2); border-color: var(--cyan); color: #b8f6ff; }
+.download-signoff { margin: 32px 0 0; text-align: center; color: var(--muted); font-size: 0.8rem; line-height: 1.8; }
+.download-signoff span { color: var(--cyan); }
+@media (max-width: 360px) {
+  .download-shell { width: calc(100% - 28px); }
+  .store-link { padding-inline: 14px; letter-spacing: 0.02em; }
+}
